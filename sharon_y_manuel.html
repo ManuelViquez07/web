@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon y Manuel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf5e6;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .intro {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff8dc;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .messages {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff8dc;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eee;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intro">
+            <h1>Sharon y Manuel</h1>
+            <p>Mira mi amor yo sé que esta vez enserio dije algo que no tenía que, pero si hay algo que me importa en esta vida eres tú, por favor dame la oportunidad de que hablemos, eres lo más hermoso que me ha pasado y sin ti me siento vacío, te amo mucho mi vida.</p>
+            <button onclick="enterGallery()">Entrar</button>
+        </div>
+
+        <div id="gallery-section" style="display: none;">
+            <h2>Nuestros Momentos</h2>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Foto 1">
+                <img src="photo2.jpg" alt="Foto 2">
+                <img src="photo3.jpg" alt="Foto 3">
+                <img src="photo4.jpg" alt="Foto 4">
+                <img src="photo5.jpg" alt="Foto 5">
+            </div>
+
+            <div class="messages">
+                <h3>Mensajes Bonitos</h3>
+                <ul>
+                    <li>Te adoro mi amor, gracias por ser tan comprensivo, eres el mejor y el único hombre que quiero en mi vida.</li>
+                    <li>Porque te necesito mucho.</li>
+                    <li>Lo más lindo que tengo en este mundo.</li>
+                    <li>Descansa mi angelito.</li>
+                    <li>Es mentira que el enamoramiento se va acabando después de los tres meses. Yo cada día estoy más enamorada.</li>
+                    <li>Yo haría todo por usted.</li>
+                    <li>Gordo sí, usted es demasiado indispensable en mi vida ahora.</li>
+                    <li>Te amo con el ímpetu del viento.</li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <footer>
+        Gracias por ser parte de mi vida, Sharon y Manuel 💖
+    </footer>
+
+    <script>
+        function enterGallery() {
+            document.querySelector('.intro').style.display = 'none';
+            document.getElementById('gallery-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
